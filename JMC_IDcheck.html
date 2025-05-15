@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>연세인몰 ID 확인</title>
+  <style>
+    body {
+      background-color: #005bac;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>2025 연세대학교 언론홍보대학원 아카라카<br>연세인몰 ID 확인</h1>
+  <input type="text" id="userId" placeholder="ID를 입력하세요" />
+  <button onclick="checkId()">제출</button>
+  <div id="result"></div>
+
+  <script>
+    const validIds = [
+      "hh601", "letyago", "sjuny0117", "star5425", "tmglove", "paris0425", "citi9693", "hyosik88",
+      "labella0105@yonsei.ac.kr", "bongsungpil", "csy83", "szwf5011", "hochjang", "2023481031", "mofasign",
+      "boomi74", "mz7164", "baechanghak", "2025481028", "avoustella", "best225", "wizpower", "ellen76",
+      "hailey", "grgrgr111", "aksen1121", "tjdals58", "pooishin", "snowhorse", "seri821", "samlee5089",
+      "leejjong33", "artrom", "12zunhyuq", "hunialee", "hbkang", "j2000bc", "soojeongyoonn", "siroiruka",
+      "snowhorse", "chowone", "leegahee1207", "luxuryaga", "oopstc", "alstpwjd0825", "eun1004ju",
+      "judi1008", "labella0105@yonsei.ac.kr", "eungee8692", "pttielove", "dktheblank", "purin423",
+      "nallm298", "yr4600", "kmmsg90", "hsyeon1129", "ysongpa", "jsm0582", "hyunandjoo", "kkangjhs2",
+      "bluefog", "eos7026", "pooishin", "kaddict", "gusdndpal", "naeri1001", "ggsweet", "hhyo78",
+      "sangheeleesh", "gusdndpal", "umi0728", "leejjong33", "hanny98", "kwang21th", "lmj530",
+      "cuj3439", "stella45", "sunnyyoun", "lisaryu", "chlwnstjd019", "iwon1219", "2025481044",
+      "salt19th", "hyosik88", "bluesky1212", "hee8619", "lucasjshin", "yam55", "joheeyeon88",
+      "wlrud0118", "khe1115", "d9742653", "tjsgh8896", "chon83", "icemejjj", "ysh1221", "sinye2002",
+      "dori1109", "yeonsoo4130", "chlwnstjd019", "hanlee0214", "ianj",
+      "mustpassion", "taegeonahn", "jetaek0709", "xx2gmm", "azzz2849", "psn9740", "leeyjoo",
+      "enfnrla", "lily9747", "jinny9287", "hwangsin86", "hsy1025", "wonody", "ellen76", "leemjin20",
+      "kim.hana", "newclassic", "aksen1121", "labella0105", "ock0709", "1sansun0", "2025481032",
+      "gomtangpoo", "sw9685", "yoojy4902", "kimju914", "witch615", "jongsun0709", "eskmika",
+      "hansin912", "lucasjshin", "gksmfthsu1", "jshin",
+      "metel", "koba7", "mofasign", "hyeseungchu", "sh1587", "sw9685", "azzz2849", "2025481048",
+      "mustpassion", "ryuryl", "watchkim", "leeyjoo", "jeehee777", "hdo221", "mistttttt", "hbright",
+      "jsm0582", "kirinmam88", "lkj134", "adslm22", "jshin", "sohyoon", "estel91", "egoistx30", "robin623",
+      "lgw67"
+    ];
+
+    function checkId() {
+      const inputId = document.getElementById('userId').value.trim();
+      const resultDiv = document.getElementById('result');
+
+      if (validIds.includes(inputId)) {
+        resultDiv.textContent = '2025 연세대학교 언론홍보대학원 아카라카 단체석에 정상적으로 신청되었습니다';
+      } else {
+        resultDiv.textContent = '일치하는 ID가 없습니다. 귀하는 언론홍보대학원 단체석에 신청되어 있지 않으므로 별도 연락이 필요합니다';
+      }
+    }
+  </script>
+</body>
+</html>
